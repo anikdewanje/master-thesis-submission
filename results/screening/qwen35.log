@@ -1,0 +1,36 @@
+plan: 1 cells, 36 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|qwen3.5:cloud|agentic_closed_loop|8.4|2000 ...
+    -> completed (ZKD closed the evacuation record) in 1088s
+2026-09-18T11:21:38 START qwen3.5:cloud screening extension (5 cells; stop file: evaluation\results\screening\QWEN-STOP.txt)
+plan: 1 cells, 37 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|qwen3.5:cloud|agentic_closed_loop|8.4|2001 ...
+    -> completed (ZKD closed the evacuation record) in 1098s
+2026-09-18T11:40:01 TIMEOUTS run=b94791b6 n=0
+2026-09-18T11:40:01 ORS-after run=b94791b6 ok
+plan: 1 cells, 38 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|qwen3.5:cloud|agentic_closed_loop|8.4|2002 ...
+    -> completed (ZKD closed the evacuation record) in 1088s
+2026-09-18T11:58:14 TIMEOUTS run=a8f45bdf n=0
+2026-09-18T11:58:14 ORS-after run=a8f45bdf ok
+plan: 1 cells, 39 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|qwen3.5:cloud|agentic_road_closure|8.4|2000 ...
+    -> outcome_saturated (all declared shelter beds filled) in 1305s
+2026-09-18T12:20:05 TIMEOUTS run=9c4885dc n=0
+2026-09-18T12:20:05 ORS-after run=9c4885dc ok
+plan: 1 cells, 40 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|qwen3.5:cloud|agentic_road_closure|8.4|2001 ...
+    -> outcome_saturated (all declared shelter beds filled) in 1133s
+2026-09-18T12:39:07 TIMEOUTS run=95c16921 n=0
+2026-09-18T12:39:08 ORS-after run=95c16921 ok
+plan: 1 cells, 41 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|qwen3.5:cloud|agentic_road_closure|8.4|2002 ...
+    -> outcome_saturated (all declared shelter beds filled) in 1118s
+2026-09-18T12:57:51 TIMEOUTS run=194a74f1 n=0
+2026-09-18T12:57:51 ORS-after run=194a74f1 ok
+2026-09-18T12:57:51 DONE

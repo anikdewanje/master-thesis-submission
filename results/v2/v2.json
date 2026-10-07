@@ -1,0 +1,1815 @@
+{
+  "gate_0": [
+    {
+      "scenario": "bus1_suspension_capacity_reduction",
+      "state_mutating": false,
+      "order_binding": false,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "informational_only",
+      "reason": "every scenario event is a message; no world, sensing or hazard state is mutated, and the null policy commits byte-identical orders",
+      "admitted": false
+    },
+    {
+      "scenario": "closed_loop",
+      "state_mutating": false,
+      "order_binding": false,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "informational_only",
+      "reason": "every scenario event is a message; no world, sensing or hazard state is mutated, and the null policy commits byte-identical orders",
+      "admitted": false
+    },
+    {
+      "scenario": "conflicting_evacuation_orders",
+      "state_mutating": false,
+      "order_binding": false,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "informational_only",
+      "reason": "every scenario event is a message; no world, sensing or hazard state is mutated, and the null policy commits byte-identical orders",
+      "admitted": false
+    },
+    {
+      "scenario": "medical_emergency_in_flight",
+      "state_mutating": false,
+      "order_binding": false,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "informational_only",
+      "reason": "every scenario event is a message; no world, sensing or hazard state is mutated, and the null policy commits byte-identical orders",
+      "admitted": false
+    },
+    {
+      "scenario": "road_closure",
+      "state_mutating": false,
+      "order_binding": true,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "order_binding",
+      "reason": "the null policy commits different orders but scores the same level (L 3 = 3); the outcome instrument cannot see the difference",
+      "admitted": false
+    },
+    {
+      "scenario": "sc1_partial_capacity_loss",
+      "state_mutating": false,
+      "order_binding": false,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "informational_only",
+      "reason": "every scenario event is a message; no world, sensing or hazard state is mutated, and the null policy commits byte-identical orders",
+      "admitted": false
+    },
+    {
+      "scenario": "unverified_persons_report",
+      "state_mutating": false,
+      "order_binding": false,
+      "outcome_binding": false,
+      "doctrine_level": 3,
+      "null_level": 3,
+      "null_survival": 1.0,
+      "verdict": "informational_only",
+      "reason": "every scenario event is a message; no world, sensing or hazard state is mutated, and the null policy commits byte-identical orders",
+      "admitted": false
+    }
+  ],
+  "regret": [
+    {
+      "system": "agentic",
+      "model": "deepseek-v4-pro:0813-cloud",
+      "scenario": "bus1_suspension_capacity_reduction",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.245,
+      "helped": 0,
+      "neutral": 2,
+      "harmed": 8
+    },
+    {
+      "system": "agentic",
+      "model": "deepseek-v4-pro:0813-cloud",
+      "scenario": "conflicting_evacuation_orders",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.35,
+      "helped": 0,
+      "neutral": 1,
+      "harmed": 9
+    },
+    {
+      "system": "agentic",
+      "model": "deepseek-v4-pro:0813-cloud",
+      "scenario": "medical_emergency_in_flight",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.19999999999999998,
+      "helped": 0,
+      "neutral": 4,
+      "harmed": 6
+    },
+    {
+      "system": "agentic",
+      "model": "deepseek-v4-pro:0813-cloud",
+      "scenario": "sc1_partial_capacity_loss",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.26,
+      "helped": 0,
+      "neutral": 6,
+      "harmed": 4
+    },
+    {
+      "system": "agentic",
+      "model": "deepseek-v4-pro:0813-cloud",
+      "scenario": "unverified_persons_report",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.31,
+      "helped": 0,
+      "neutral": 2,
+      "harmed": 8
+    },
+    {
+      "system": "agentic",
+      "model": "glm-5.2:cloud",
+      "scenario": "bus1_suspension_capacity_reduction",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.15,
+      "helped": 0,
+      "neutral": 7,
+      "harmed": 3
+    },
+    {
+      "system": "agentic",
+      "model": "glm-5.2:cloud",
+      "scenario": "conflicting_evacuation_orders",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.15,
+      "helped": 0,
+      "neutral": 7,
+      "harmed": 3
+    },
+    {
+      "system": "agentic",
+      "model": "glm-5.2:cloud",
+      "scenario": "medical_emergency_in_flight",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.15,
+      "helped": 0,
+      "neutral": 7,
+      "harmed": 3
+    },
+    {
+      "system": "agentic",
+      "model": "glm-5.2:cloud",
+      "scenario": "sc1_partial_capacity_loss",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.19,
+      "helped": 0,
+      "neutral": 7,
+      "harmed": 3
+    },
+    {
+      "system": "agentic",
+      "model": "glm-5.2:cloud",
+      "scenario": "unverified_persons_report",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.16,
+      "helped": 0,
+      "neutral": 6,
+      "harmed": 4
+    },
+    {
+      "system": "agentic",
+      "model": "qwen3.5:cloud",
+      "scenario": "bus1_suspension_capacity_reduction",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.07999999999999999,
+      "helped": 0,
+      "neutral": 6,
+      "harmed": 4
+    },
+    {
+      "system": "agentic",
+      "model": "qwen3.5:cloud",
+      "scenario": "conflicting_evacuation_orders",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.019999999999999997,
+      "helped": 0,
+      "neutral": 8,
+      "harmed": 2
+    },
+    {
+      "system": "agentic",
+      "model": "qwen3.5:cloud",
+      "scenario": "medical_emergency_in_flight",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.07999999999999999,
+      "helped": 1,
+      "neutral": 7,
+      "harmed": 2
+    },
+    {
+      "system": "agentic",
+      "model": "qwen3.5:cloud",
+      "scenario": "sc1_partial_capacity_loss",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.21999999999999997,
+      "helped": 1,
+      "neutral": 4,
+      "harmed": 5
+    },
+    {
+      "system": "agentic",
+      "model": "qwen3.5:cloud",
+      "scenario": "unverified_persons_report",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": -0.09999999999999999,
+      "helped": 1,
+      "neutral": 5,
+      "harmed": 4
+    },
+    {
+      "system": "baseline",
+      "model": "-",
+      "scenario": "bus1_suspension_capacity_reduction",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": 0.0,
+      "helped": 0,
+      "neutral": 10,
+      "harmed": 0
+    },
+    {
+      "system": "baseline",
+      "model": "-",
+      "scenario": "conflicting_evacuation_orders",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": 0.0,
+      "helped": 0,
+      "neutral": 10,
+      "harmed": 0
+    },
+    {
+      "system": "baseline",
+      "model": "-",
+      "scenario": "medical_emergency_in_flight",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": 0.0,
+      "helped": 0,
+      "neutral": 10,
+      "harmed": 0
+    },
+    {
+      "system": "baseline",
+      "model": "-",
+      "scenario": "sc1_partial_capacity_loss",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": 0.0,
+      "helped": 0,
+      "neutral": 10,
+      "harmed": 0
+    },
+    {
+      "system": "baseline",
+      "model": "-",
+      "scenario": "unverified_persons_report",
+      "n": 10,
+      "null_survival": 1.0,
+      "mean_regret": 0.0,
+      "helped": 0,
+      "neutral": 10,
+      "harmed": 0
+    }
+  ],
+  "closure_by_type": [
+    {
+      "handshake": "capacity_query",
+      "requests": 570,
+      "closed": 540,
+      "rate": 0.9473684210526315,
+      "median_lag_min": null
+    },
+    {
+      "handshake": "dispatch_mission",
+      "requests": 365,
+      "closed": 354,
+      "rate": 0.9698630136986301,
+      "median_lag_min": null
+    },
+    {
+      "handshake": "confirm_dropoff",
+      "requests": 331,
+      "closed": 330,
+      "rate": 0.9969788519637462,
+      "median_lag_min": null
+    },
+    {
+      "handshake": "request_medical",
+      "requests": 277,
+      "closed": 253,
+      "rate": 0.9133574007220217,
+      "median_lag_min": null
+    },
+    {
+      "handshake": "dispatch_escort_mission",
+      "requests": 261,
+      "closed": 233,
+      "rate": 0.89272030651341,
+      "median_lag_min": null
+    },
+    {
+      "handshake": "mission_complete",
+      "requests": 97,
+      "closed": 85,
+      "rate": 0.8762886597938144,
+      "median_lag_min": null
+    },
+    {
+      "handshake": "abort_request",
+      "requests": 31,
+      "closed": 17,
+      "rate": 0.5483870967741935,
+      "median_lag_min": null
+    }
+  ],
+  "loss_attribution": [
+    {
+      "run_id": "58b7beaf",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "986dda5c",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e12820a1",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7cc61481",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e1e4f6e4",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "4488fd26",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "3f281702",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "38b39c1b",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "005c7010",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "d3881035",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "2513a6db",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "5118bc37",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "63814748",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "5b548aee",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "94d53746",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "8ba41783",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "f9742570",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "77201437",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7393e8d3",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "f38a0ba1",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "dbf2caa0",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "9bd3a1ca",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "21bc8ce6",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "0f48a73f",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "8bae7991",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "d81ce22f",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "a45b00bd",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "c9013c7e",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "9eb6e3ab",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e2980702",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "2af7225a",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "a116abbe",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "9a71cf7d",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "492d8461",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "0bfbd4e3",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "59596951",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7e830956",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "54a50692",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e6514762",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "43598293",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "ad51cd9a",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 50,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "cef5120e",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "615cc15c",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "71ce2888",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "69457269",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "4c529a1d",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "0ffd2120",
+      "ceiling": 100,
+      "completeness": 0.6,
+      "never_dispatched": 40,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7cd71808",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "db583990",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "b0e49fb1",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "5961b028",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 40,
+      "shelter_overloaded": 0,
+      "over_ceiling": 30
+    },
+    {
+      "run_id": "eaed7450",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "652a84e7",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "43cac947",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "955758e3",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 50,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e4e7153b",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "4e294d33",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "f247d48d",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "36ccf4c7",
+      "ceiling": 100,
+      "completeness": 0.4,
+      "never_dispatched": 60,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "dec7edb0",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "aaae313d",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "5f5b6b1e",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7e74e997",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "ea4b2933",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "8fe47ec7",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "68684c10",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "36797585",
+      "ceiling": 100,
+      "completeness": 0.6,
+      "never_dispatched": 40,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e3880023",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "b427c70d",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "2ecd3fb1",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "6cca2525",
+      "ceiling": 100,
+      "completeness": 0.6,
+      "never_dispatched": 40,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "fdc6d559",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "db148efe",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "84eebfd6",
+      "ceiling": 100,
+      "completeness": 0.4,
+      "never_dispatched": 10,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "11957f4b",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "184da761",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1efc180d",
+      "ceiling": 100,
+      "completeness": 0.4,
+      "never_dispatched": 60,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "f157642b",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "8e65d333",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 10,
+      "arrived_late": 90,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "06855e53",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7c9f1287",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1e017c66",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "c9ce44e9",
+      "ceiling": 100,
+      "completeness": 0.4,
+      "never_dispatched": 60,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "3b7c6711",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "d9277a3c",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "c6536397",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "4d487fb3",
+      "ceiling": 100,
+      "completeness": 0.65,
+      "never_dispatched": 35,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "045239a8",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "ca9bdde5",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 15,
+      "over_ceiling": 15
+    },
+    {
+      "run_id": "fecb4f04",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 100,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "b124733f",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "ed0b5cb7",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1357bddf",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 100,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "79a57de1",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "6d897344",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 0,
+      "arrived_late": 100,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "5a845661",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1228070c",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "0fc1e0d5",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1bf52740",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "993f25a5",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "5f241422",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "de062b46",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 50,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "6d80de25",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "17d65a39",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "6043e7b7",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "55c3b0bd",
+      "ceiling": 100,
+      "completeness": 0.6,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 40,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "046c51e0",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "06ccc62a",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "03459286",
+      "ceiling": 100,
+      "completeness": 1.1,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 40,
+      "over_ceiling": 50
+    },
+    {
+      "run_id": "668d8f0b",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e5d86ee0",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "58ba8dbd",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "45c95de6",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 40,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "0d1edd0e",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "b283c20b",
+      "ceiling": 100,
+      "completeness": 0.6,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 40,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "68a1fcdd",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "9b67e149",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "405a84a1",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "d66ce694",
+      "ceiling": 100,
+      "completeness": 1.1,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 40,
+      "over_ceiling": 50
+    },
+    {
+      "run_id": "766bb517",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1c9b5c42",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "c691073c",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "47ddca14",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "71a95870",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "78891e36",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "eaf3085a",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "a803f49b",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1bd69c69",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "a269b61f",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "29d3290f",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "b5fa85cf",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "7d01f542",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "39943ce4",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "68ded8d3",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "95882f25",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1cf33155",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "1edfeba0",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "10609cea",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "062802c8",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "224e310a",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "8bd769f8",
+      "ceiling": 100,
+      "completeness": 1.1,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 40,
+      "over_ceiling": 50
+    },
+    {
+      "run_id": "9f5329cd",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 0,
+      "arrived_late": 10,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "e1b3e836",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "b384a397",
+      "ceiling": 100,
+      "completeness": 0.4,
+      "never_dispatched": 5,
+      "arrived_late": 55,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "eb997b3e",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 50
+    },
+    {
+      "run_id": "113ab522",
+      "ceiling": 100,
+      "completeness": 0.5,
+      "never_dispatched": 0,
+      "arrived_late": 50,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "6e5c06a0",
+      "ceiling": 100,
+      "completeness": 0.9,
+      "never_dispatched": 10,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "a834d4de",
+      "ceiling": 100,
+      "completeness": 0.0,
+      "never_dispatched": 10,
+      "arrived_late": 90,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "70f96f19",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    },
+    {
+      "run_id": "ddd422e9",
+      "ceiling": 100,
+      "completeness": 1.0,
+      "never_dispatched": 0,
+      "arrived_late": 0,
+      "shelter_overloaded": 0,
+      "over_ceiling": 0
+    }
+  ],
+  "coordination_surface": {
+    "agentic/deepseek-v4-pro:0813-cloud": {
+      "n": 50,
+      "nodes": 11,
+      "messages": 91.92,
+      "decisions": 152.62,
+      "messages_per_resident": 1.2643741403026134,
+      "tokens": 725456.58,
+      "budget_fraction": 1.796794,
+      "over_budget_runs": 40
+    },
+    "agentic/glm-5.2:cloud": {
+      "n": 50,
+      "nodes": 11,
+      "messages": 111.78,
+      "decisions": 174.94,
+      "messages_per_resident": 1.3307142857142857,
+      "tokens": 829905.8,
+      "budget_fraction": 2.697358,
+      "over_budget_runs": 50
+    },
+    "agentic/qwen3.5:cloud": {
+      "n": 50,
+      "nodes": 11,
+      "messages": 106.58,
+      "decisions": 170.34,
+      "messages_per_resident": 1.1842222222222223,
+      "tokens": 894243.4,
+      "budget_fraction": 2.277878,
+      "over_budget_runs": 50
+    },
+    "baseline/-": {
+      "n": 50,
+      "nodes": 2,
+      "messages": 13.2,
+      "decisions": 13.2,
+      "messages_per_resident": 0.132,
+      "tokens": 0,
+      "budget_fraction": 0.0,
+      "over_budget_runs": 0
+    }
+  },
+  "commitment_bands": [
+    {
+      "plan_revisions": 2,
+      "at_cap": false,
+      "n": 61,
+      "mean_survival": 0.9229508196721311,
+      "mean_aborts": 0.08196721311475409,
+      "full_delivery_rate": 0.9016393442622951
+    },
+    {
+      "plan_revisions": 3,
+      "at_cap": false,
+      "n": 22,
+      "mean_survival": 0.8272727272727273,
+      "mean_aborts": 0.5454545454545454,
+      "full_delivery_rate": 0.7727272727272727
+    },
+    {
+      "plan_revisions": 4,
+      "at_cap": false,
+      "n": 15,
+      "mean_survival": 0.8533333333333334,
+      "mean_aborts": 0.6666666666666666,
+      "full_delivery_rate": 0.6666666666666666
+    },
+    {
+      "plan_revisions": 5,
+      "at_cap": false,
+      "n": 11,
+      "mean_survival": 0.7818181818181819,
+      "mean_aborts": 1.2727272727272727,
+      "full_delivery_rate": 0.6363636363636364
+    },
+    {
+      "plan_revisions": 6,
+      "at_cap": true,
+      "n": 41,
+      "mean_survival": 0.6695121951219513,
+      "mean_aborts": 1.6341463414634145,
+      "full_delivery_rate": 0.3170731707317073
+    }
+  ],
+  "abort_reason_mix": {
+    "total": 108,
+    "counts": {
+      "failure_response": 57,
+      "churn_initiated": 14,
+      "other": 37
+    },
+    "shares": {
+      "failure_response": 0.5277777777777778,
+      "churn_initiated": 0.12962962962962962,
+      "other": 0.3425925925925926
+    },
+    "causal_direction_unresolved": true
+  },
+  "commitment_correlations": {
+    "plan_revisions": -0.40821978079025306,
+    "aborts": -0.3059390094188109
+  }
+}

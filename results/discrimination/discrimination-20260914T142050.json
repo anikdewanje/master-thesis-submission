@@ -1,0 +1,86 @@
+{
+  "verdict": "PASS",
+  "stamp": "20260914T142050",
+  "git_commit": "e9e20cd1a82b482b66d96384971d584dc1366acf",
+  "git_dirty": false,
+  "thresholds_sha256": "d08c1e35380ff4a4d94e15d6f6317feaa166611e8e405211ca89fdf3b7214551",
+  "rules": {
+    "compares": "level",
+    "without_clean_run_reference": true,
+    "no_replan_suppresses": "contingencies.check"
+  },
+  "rows": [
+    {
+      "role": "gate",
+      "scenario": "evaluation/fixtures/baseline_shelter_closure.json",
+      "scenario_sha256": "9f28d83bf9c8167157d66d48bc0e4f56522e71880b7f7b7b3b604f4b48bd4767",
+      "world_declared": true,
+      "ic": {
+        "run_id": "discrimination-baseline_shelter_closure-ic-20260914T142050",
+        "level": 3,
+        "completeness": 1.0,
+        "valid_residents": 60,
+        "ceiling": 60,
+        "bus_km": 83.122
+      },
+      "no_replan": {
+        "run_id": "discrimination-baseline_shelter_closure-no_replan-20260914T142050",
+        "level": 0,
+        "completeness": 0.0,
+        "valid_residents": 0,
+        "ceiling": 60,
+        "bus_km": 38.139
+      },
+      "orders_identical": false,
+      "discriminates": true
+    },
+    {
+      "role": "note",
+      "scenario": "scenarios/baseline_closed_loop.json",
+      "scenario_sha256": "c68f349c1a4c84d7008309293318b04c1376d106c58d8eaf47bb997a549dff4c",
+      "world_declared": true,
+      "ic": {
+        "run_id": "discrimination-baseline_closed_loop-ic-20260914T142050",
+        "level": 3,
+        "completeness": 1.0,
+        "valid_residents": 100,
+        "ceiling": 100,
+        "bus_km": 60.63
+      },
+      "no_replan": {
+        "run_id": "discrimination-baseline_closed_loop-no_replan-20260914T142050",
+        "level": 3,
+        "completeness": 1.0,
+        "valid_residents": 100,
+        "ceiling": 100,
+        "bus_km": 60.63
+      },
+      "orders_identical": true,
+      "discriminates": false
+    },
+    {
+      "role": "note",
+      "scenario": "scenarios/baseline_road_closure.json",
+      "scenario_sha256": "51da18693d4706c92e8fb5d752c7e794c0b18c9f1d240abf5bbf850bcf028f56",
+      "world_declared": false,
+      "ic": {
+        "run_id": "discrimination-baseline_road_closure-ic-20260914T142050",
+        "level": 3,
+        "completeness": 1.0,
+        "valid_residents": 60,
+        "ceiling": 60,
+        "bus_km": 83.122
+      },
+      "no_replan": {
+        "run_id": "discrimination-baseline_road_closure-no_replan-20260914T142050",
+        "level": 3,
+        "completeness": 1.0,
+        "valid_residents": 60,
+        "ceiling": 60,
+        "bus_km": 38.139
+      },
+      "orders_identical": false,
+      "discriminates": false
+    }
+  ]
+}

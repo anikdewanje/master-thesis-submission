@@ -1,0 +1,8 @@
+plan: 1 cells, 28 already recorded, 1 to run
+estimated wall time: 0.0 h (0.0 days)
+[1/1] baseline|none|baseline_closed_loop|8.4|2003 ...
+    -> completed (deterministic walk of 13 events) in 2s
+plan: 1 cells, 29 already recorded, 1 to run
+estimated wall time: 0.4 h (0.0 days)
+[1/1] agentic|kimi-k2.7-code:cloud|agentic_closed_loop|8.4|2003 ...
+    -> outcome_saturated (all declared shelter beds filled) in 1133s
